@@ -3,69 +3,92 @@
    margin: 0;
    padding: 0;
    font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
 }
 
 .intro{
-   background-color: #cad1d1;
+   background-color: #353A3C;
    margin: 0px 0px;
+   margin-top: 1px;
+   padding-top: 40px;
    width: 100%;
-   height: 420px;
+   height: 420px; 
 }
-.text-box{
-   font-family: sans-serif;
-   width: 90%;
-   color: rgb(32, 29, 29);
-   position: absolute;
-   top: 45%;
-   left: 50%;
-   bottom: 5%;
-   transform: translate(-50%,-50%);
-   text-align: center;    
+.image{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
-.text-box h1{
-   font-size: 50px;
+.intro h1{
+   color: #D1CDC7;
+   text-align: center;
+   font-size: 5vw;
 }
-.text-box p{
-   font-family:cursive;
-   margin: 10px 0 40px;
-   font-size: 20px;
-   color: rgb(146, 142, 142);
+.intro p{
+   margin-left: 5%;
+   margin-right: 5%;
+   color: #D1CDC7;
+   text-align: center;
 }
-.hero-btn{
-   display: inline-block;
-   text-decoration: none;
-   color: #fff;
-   border: 1px solid #fff;
-   padding: 12px 34px;
-   font-size: 13px;
-   background: transparent;
-   position: relative;
-   cursor: pointer;
-}
-.hero-btn:hover{
-   border: 1px solid #f44336;
-   background: #f44336;
-   transition: 1s;
+.buttons{
+   display: block;
+   width: 250px;
+   margin: auto;
 }
 
 /* -------------- content -------------- */
-.section{
-   background-color: #31e2e2;
+.content{
+   background-color: #978d8d;
    width: 100%;  
+   padding: 40px;
+   margin-top: 1px;
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
 }
-.card-holder{
+/* .card-holder{
 
    margin: 5% 10%;
    display: flex;
    justify-content: space-between;
-}
-.card{
+} */
+/* .card{
    display: inline-block;
    margin-left: 10px;
-}
+} */
+
+.card1 {
+   background-color: #2196F3;
+   padding: 20px;
+   float: left;
+   display: inline-block;
+   width: 100%; /* The width is 20%, by default */
+ }
+ 
+ .card2 {
+   background-color: #f1f1f1;
+   padding: 20px;
+   float: left;
+   width: 32%; /* The width is 60%, by default */
+ }
+ 
+ .card3 {
+   background-color: #04AA6D;
+   padding: 20px;
+   float: left;
+   width: 32%; /* The width is 20%, by default */
+ }
+@media screen and (max-width: 600px) {
+   .card1, .card2, .card3 {
+     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+   }
+ }
 
 /* -------------- footer ------------------- */
 
+.footer{
+   margin-top: 1px;
+}
 .text-footer{
    font-family: sans-serif;
    width: 100%;
